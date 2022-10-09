@@ -46,9 +46,9 @@ PASSWORD = ''
 #   - it's recommended to pass in a tuple of 5 elements.
 #   - e.g. ('', '', '127.0.0.1', '6800', '') or ('username', 'password', 'localhost', '6801', 'group')
 SCRAPYD_SERVERS = [
-    '127.0.0.1:6800',
+    '127.0.0.1:9999',
     # 'username:password@localhost:6801#group',
-    ('username', 'password', 'localhost', '6801', 'group'),
+    ('username', 'password', 'localhost', '10000', 'group'),
 ]
 
 
@@ -260,7 +260,7 @@ SMTP_CONNECTION_TIMEOUT = 30
 
 ############################## Monitor & Alert ################################
 # The default is False, set it to True to launch the poll subprocess to monitor your crawling jobs.
-ENABLE_MONITOR = False
+ENABLE_MONITOR = True
 
 ########## poll interval ##########
 # Tip: In order to be notified (and stop or forcestop a job when triggered) in time,
